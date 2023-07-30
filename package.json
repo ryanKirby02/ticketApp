@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "name": "ticketapp",
+  "type": "module",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "scripts": {
+    "server": "nodemon --exec \"ts-node --esm\" ./server/index.ts",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
